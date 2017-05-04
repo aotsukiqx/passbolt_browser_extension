@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Passbolt Extension Testing Edition",
+  "name": "Passbolt Testing Edition",
   "short_name": "passbolt-testing",
   "version": "1.5.0",
   "description": "Passbolt extension testing edition. This is the testing version, do not enable for regular use.",
