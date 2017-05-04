@@ -6,6 +6,7 @@
  */
 var preferences = require('sdk/preferences/service');
 var self = require("sdk/self");
+var _config = require("../config/config.json");
 
 /**
  * Get the value of given browser setting
@@ -35,7 +36,7 @@ exports.set = set;
  * @return {string}
  */
 var getExtensionUrl = function () {
-  return "resource://passbolt-at-passbolt-dot-com";
+  return _config.extensionBasePath;
 };
 exports.getExtensionUrl = getExtensionUrl;
 

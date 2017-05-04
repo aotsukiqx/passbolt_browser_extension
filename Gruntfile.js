@@ -53,14 +53,14 @@ module.exports = function (grunt) {
           "cp <%= config.build.firefox.path %>/lib/config/config.json <%= config.build.firefox.path %>/lib/config/config.json.original",
           "sed -i '' -e 's/[\"]debug[\"]:.*$/\"debug\": true/' <%= config.build.firefox.path %>/lib/config/config.json",
           './node_modules/jpm/bin/jpm xpi --addon-dir <%= config.build.firefox.path %>',
-          "mv <%= config.build.firefox.path %>/passbolt.xpi <%= config.build.firefox.path %>/passbolt-<%= pkg.version %>-debug.xpi",
+          "mv <%= config.build.firefox.path %>/<%= pkg.name %>.xpi <%= config.build.firefox.path %>/passbolt-<%= pkg.version %>-debug.xpi",
           "sed -i '' -e 's/[\"]debug[\"]:.*$/\"debug\": false/' <%= config.build.firefox.path %>/lib/config/config.json",
           './node_modules/jpm/bin/jpm xpi --addon-dir <%= config.build.firefox.path %>',
-          "mv <%= config.build.firefox.path %>/passbolt.xpi <%= config.build.firefox.path %>/passbolt-<%= pkg.version %>.xpi",
+          "mv <%= config.build.firefox.path %>/<%= pkg.name %>.xpi <%= config.build.firefox.path %>/passbolt-<%= pkg.version %>.xpi",
           'ln -s passbolt-<%= pkg.version %>-debug.xpi <%= config.build.firefox.path %>/passbolt-latest@passbolt.com.xpi',
           "rm <%= config.build.firefox.path %>/lib/config/config.json",
           "cp <%= config.build.firefox.path %>/lib/config/config.json.original <%= config.build.firefox.path %>/lib/config/config.json",
-          "rm <%= config.build.firefox.path %>/lib/config/config.json.original",
+          "rm <%= config.build.firefox.path %>/lib/config/config.json.original"
         ].join('&&')
       },
       install_xpi: {
