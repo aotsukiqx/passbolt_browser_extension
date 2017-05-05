@@ -1,8 +1,8 @@
 {
-  "name": "passbolt-testing",
+  "name": "passbolt-firefox-addon",
   "version": "1.5.0",
   "title": "Passbolt Testing Edition",
-  "id": "passbolt-testing@passbolt.com",
+  "id": "passbolt-firefox-addon@passbolt.com",
   "description": "Passbolt extension testing edition. This is the testing version, do not enable for regular use.",
   "license": "AGPL-3.0",
   "icon": "resource://@passbolt/skin/logo-48.png",
