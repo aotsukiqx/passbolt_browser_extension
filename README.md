@@ -1,9 +1,11 @@
+```THIS IS A FORK```
+
 	      ____                  __          ____
 	     / __ \____  _____ ____/ /_  ____  / / /_
 	    / /_/ / __ `/ ___/ ___/ __ \/ __ \/ / __/
 	   / ____/ /_/ (__  |__  ) /_/ / /_/ / / /_
 	  /_/    \__,_/____/____/_.___/\____/_/\__/
-	
+
 	Open source password manager for teams
 	(c) 2017 Passbolt SARL
 	https://www.passbolt.com
@@ -84,7 +86,7 @@ The non-minified source code is located in ```/src```. It can be 'bundled' ```to
 grunt
 ```
 
-In order to rebuild the code in this directory automatically while you are editing the src 
+In order to rebuild the code in this directory automatically while you are editing the src
 you can use the grunt watch task:
 ```
 grunt watch
@@ -101,7 +103,7 @@ web-ext run
 
 This instance will be reloaded everytime there is a change in the /dist/all code or by pressing the ```r```
 key on the keyboard when web-ext is running.
-You can debug the application script by opening the 
+You can debug the application script by opening the
 [browser console](https://developer.mozilla.org/en/docs/Tools/Browser_Console).
 
 ### Chrome
@@ -120,7 +122,7 @@ The build can be found under ```dist/chrome``` or ```dist/firefox```.
 
 ## Updating the vendors or the styleguide
 
-You can update the vendors or the styleguide in the ```package.json``` and run the copy task 
+You can update the vendors or the styleguide in the ```package.json``` and run the copy task
 in grunt to deploy them in the appropriate places. Check the ```Gruntfile.js```
 for more information.
 ```

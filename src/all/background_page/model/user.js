@@ -48,17 +48,17 @@ User.prototype.__validate = function (field, value) {
       if (typeof value === 'undefined' || value === '') {
         throw new Error(__('The first name cannot be empty'));
       }
-      if (!Validator.isAlphanumericSpecial(value)) {
-        throw new Error(__('The first name should only contain alphabetical and numeric characters'))
-      }
+      // if (!Validator.isAlphanumericSpecial(value)) {
+      //   throw new Error(__('The first name should only contain alphabetical and numeric characters'))
+      // }
       break;
     case 'lastname' :
       if (typeof value === 'undefined' || value === '') {
         throw new Error(__('The last name cannot be empty'));
       }
-      if (!Validator.isAlphanumericSpecial(value)) {
-        throw new Error(__('The last name should only contain alphabetical and numeric characters'))
-      }
+      // if (!Validator.isAlphanumericSpecial(value)) {
+      //   throw new Error(__('The last name should only contain alphabetical and numeric characters'))
+      // }
       break;
     case 'username' :
       if (typeof value === 'undefined' || value === '') {
